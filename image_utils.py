@@ -3,17 +3,15 @@ import numpy as np
 def load_model():
     return None
 
-def predict_food(image, model=None):
-    # Convert image safely to RGB
+# ⚠️ order SAME जैसा app.py में call हो रहा है
+def predict_food(model, image):
     image = image.convert("RGB")
     img = np.array(image)
 
-    # अब safe है (3 channels guaranteed)
     r = img[:, :, 0].mean()
     g = img[:, :, 1].mean()
     b = img[:, :, 2].mean()
 
-    # Rules
     if r > 150 and g < 120:
         return [("Strawberry", 92.0)]
     elif g > 130 and r < 120:
