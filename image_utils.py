@@ -1,8 +1,10 @@
 import numpy as np
-from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2, preprocess_input, decode_predictions
-from tensorflow.keras.preprocessing.image import img_to_array
 
-_model = None
+def load_model():
+    return None
+
+def predict_food(image, model=None):
+    return "Food item (AI disabled)", 0.0
 
 def load_model():
     global _model
