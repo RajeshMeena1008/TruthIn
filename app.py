@@ -1,5 +1,8 @@
 import sys
 import os
+sys.path.append(os.getcwd())
+import sys
+import os
 
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from ocr_utils import extract_text_from_image, parse_nutrition_from_text
