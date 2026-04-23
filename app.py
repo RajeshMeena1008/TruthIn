@@ -1,4 +1,8 @@
+import sys
+import os
 
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+from ocr_utils import extract_text_from_image, parse_nutrition_from_text
 from image_utils import load_model, predict_food
 
 import streamlit as st
