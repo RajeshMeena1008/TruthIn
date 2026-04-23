@@ -1,10 +1,8 @@
-import numpy as np
-
 def load_model():
     return None
 
 def predict_food(image, model=None):
-    return "Food item (AI disabled)", 0.0
+    return "Food detected (AI disabled)", 0.0
 
 def load_model():
     global _model
