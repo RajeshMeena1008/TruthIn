@@ -1,0 +1,11 @@
+streamlit
+numpy
+pandas
+pillow
+plotly
+requests
+scikit-learn
+reportlab
+joblib
+easyocr
+tensorflow
